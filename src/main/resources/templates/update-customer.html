@@ -15,17 +15,17 @@
                     <form action="#" th:action="@{/update/{id}(id=${customer.id})}" th:object="${customer}" method="post">
                         <div class="row">
                             <div>
-                                <label for="name" >Name</label>
+                                <label for="name" >Name</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <input type="text" th:field="*{name}"  id="name" placeholder="Name">
                                 <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" ></span>
                             </div>
-                            <div>
-                                <label for="surname" >Surname</label>
+                            <div><br/>
+                                <label for="surname" >Surname</label> &nbsp;&nbsp;&nbsp;&nbsp;
                                 <input type="text" th:field="*{surname}"  id="surname" placeholder="Name">
                                 <span th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}" ></span>
                             </div>
-                            <div>
-                                <label for="email" >Email</label>
+                            <div><br/>
+                                <label for="email" >Email</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <input type="text" th:field="*{email}"  id="email" placeholder="Email">
                                 <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" ></span>
                             </div>
