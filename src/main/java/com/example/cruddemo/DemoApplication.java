@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication 
 public class DemoApplication {
 	
-	@Value("${server.http.port")
+	@Value("${server.http.port}")
 	private int httpPort;
 	
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class DemoApplication {
     }
     
     private Connector createStandardConnector() {
-    	Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocal");
+    	Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
     	connector.setPort(httpPort);
     	return connector;
     }
